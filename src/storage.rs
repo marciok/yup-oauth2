@@ -106,14 +106,14 @@ struct JSONTokens {
 /// Serializes tokens to a JSON file on disk.
 #[derive(Default)]
 pub struct DiskTokenStorage {
-    pub location: String,
+    location: String,
     tokens: HashMap<u64, Token>,
 }
 
 impl DiskTokenStorage {
     pub fn new(location: &String) -> Result<DiskTokenStorage, io::Error> {
         let mut dts = DiskTokenStorage {
-            location: location.clone(),
+            location: "thestupidotke".to_string().clone(),
             tokens: HashMap::new(),
         };
 
