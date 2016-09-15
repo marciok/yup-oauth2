@@ -106,7 +106,7 @@ struct JSONTokens {
 /// Serializes tokens to a JSON file on disk.
 #[derive(Default)]
 pub struct DiskTokenStorage {
-    location: String,
+    pub location: String,
     tokens: HashMap<u64, Token>,
 }
 
